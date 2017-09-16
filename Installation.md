@@ -1,4 +1,10 @@
 # Build from source
+## Cloning this repo
+
+    git clone https://github.com/Azure/azure-storage-fuse/
+
+If you do not have git, install git via `sudo apt-get install git`
+
 ## Installing dependencies
 ### CentOS instructions
 
