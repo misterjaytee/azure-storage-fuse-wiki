@@ -29,7 +29,7 @@ Default location for buffer cache is /mnt/blobfusetmp. Create this directory and
 
     ./mount.sh <path_to_mountpoint>
 
-#### Persisting
+### Persisting
 1. Update connection.cfg file with your storage account information.
 2. Edit /etc/fstab with the blobfuse script. Add the following line:
 
