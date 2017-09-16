@@ -1,22 +1,20 @@
-# Installation
-
-## Build from source
-### Installing dependencies
-#### CentOS instructions
+# Build from source
+## Installing dependencies
+### CentOS instructions
 
     sudo yum -y install epel-release
     sudo yum install git cmake3 fuse-devel libcurl-devel gcc gcc-c++ openssl-devel fuse -y
 
-#### Ubuntu instructions
+### Ubuntu instructions
 
     sudo apt-get install pkg-config libfuse-dev cmake libcurl4-openssl-dev -y
 
-### Building
+## Building
 Run the build script located in the root folder of the repository. This will build the Azure Storage C++ Light library along with Blobfuse.
 
     ./build.sh
 
-### Preparing
+## Preparing
 Blobfuse uses the local disk as a buffer cache. On Azure, use the ephemeral drive (usually SSD) to get the most performance out of the buffer cache. Note that Blobfuse will need to have write access to the directory you choose as a buffer cache.
 
 Default location for buffer cache is /mnt/blobfusetmp. Create this directory and change owner to the user that mounts the Blobfuse.
@@ -24,10 +22,11 @@ Default location for buffer cache is /mnt/blobfusetmp. Create this directory and
     mkdir /mnt/blobfusetmp
     chown <youruser> /mnt/blobfusetmp
 
-### Mounting
-#### One time mount
+## Mounting
+### One time mount
 1. Update connection.cfg file with your storage account information. By default, connection.cfg is located in blobfuse directory.
-2. Run mount.sh
+2. Run mount.sh    
+
     ./mount.sh <path_to_mountpoint>
 
 #### Persisting
