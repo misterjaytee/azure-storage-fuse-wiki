@@ -30,7 +30,7 @@ Default location for buffer cache is /mnt/blobfusetmp. Create this directory and
 
 ## Mounting
 ### One time mount
-1. Update connection.cfg file with your storage account information. By default, connection.cfg is located in blobfuse directory.
+1. Update connection.cfg file with your storage account information. By default, connection.cfg is located in the root directory of this repository.
 2. Run mount.sh    
 
 `./mount.sh <path_to_mountpoint>`
