@@ -40,3 +40,7 @@ Default location for buffer cache is /mnt/blobfusetmp. Create this directory and
 2. Edit /etc/fstab with the blobfuse script. Add the following line:
 
 `/<path_to_blobfuse>/mount.sh   <path_to_mount>     fuse    _netdev`
+
+## Unmounting
+The standard way to unmount a FUSE adapter is to use 'fusermount':
+`fusermount -u <path_to_mountpoint>`
