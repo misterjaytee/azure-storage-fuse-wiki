@@ -32,7 +32,7 @@ Default location for buffer cache is /mnt/blobfusetmp. Create this directory and
     mkdir /mnt/blobfusetmp
     chown <youruser> /mnt/blobfusetmp
 
-Note for RedHat: Use /mnt/resource/blobfusetmp as the temp path on RedHat as the ephemeral drive is mounted on /mnt/resource in RedHat on Azure.
+**Note for RedHat:** Use /mnt/resource/blobfusetmp as the temp path on RedHat as the ephemeral drive is mounted on /mnt/resource in RedHat on Azure.
 
 ## Mounting
 ### One time mount
