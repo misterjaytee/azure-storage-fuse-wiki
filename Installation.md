@@ -11,6 +11,10 @@ If you do not have git, install git via `sudo apt-get install git`
     sudo yum -y install epel-release
     sudo yum install git cmake3 fuse-devel libcurl-devel gcc gcc-c++ gnutls-devel fuse -y
 
+### RedHat instructions
+
+    sudo yum install git cmake fuse-devel libcurl-devel gcc gcc-c++ gnutls-devel fuse -y
+
 ### Ubuntu instructions
 
     sudo apt-get install pkg-config libfuse-dev cmake libcurl4-gnutls-dev libgnutls28-dev -y
@@ -27,6 +31,8 @@ Default location for buffer cache is /mnt/blobfusetmp. Create this directory and
 
     mkdir /mnt/blobfusetmp
     chown <youruser> /mnt/blobfusetmp
+
+Note for RedHat: Use /mnt/resource/blobfusetmp as the temp path on RedHat as the ephemeral drive is mounted on /mnt/resource in RedHat on Azure.
 
 ## Mounting
 ### One time mount
