@@ -3,8 +3,8 @@ blobfuse uses the local disk as a buffer cache. On Azure, use the ephemeral driv
 
 Default location for buffer cache is /mnt/blobfusetmp. Create this directory and change owner to the user that mounts blobfuse.
 
-    mkdir /mnt/blobfusetmp
-    chown <youruser> /mnt/blobfusetmp
+    sudo mkdir /mnt/blobfusetmp
+    sudo chown <youruser> /mnt/blobfusetmp
 
 **Note for RedHat:** Use /mnt/resource/blobfusetmp as the temp path on RedHat as the ephemeral drive is mounted on /mnt/resource in RedHat on Azure.
 
