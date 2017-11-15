@@ -10,7 +10,7 @@ Only the users that are part of the group fuse, and the root user can run fuserm
 Possible causes are invalid account, key or container. In addition to this, if your account is https only, you may encounter this problem as blobfuse by default uses http. Run blobfuse with https using the option --use-https=true
 
 # Problems with build
-**1 CMake Error: your CXX compiler: "CMAKE_CXX_COMPILER-NOTFOUND" was not found.   Please set CMAKE_CXX_COMPILER to a valid compiler path or name.
+**1. CMake Error: your CXX compiler: "CMAKE_CXX_COMPILER-NOTFOUND" was not found.**
 
 Cmake is unable to find g++. Install it via:
 
