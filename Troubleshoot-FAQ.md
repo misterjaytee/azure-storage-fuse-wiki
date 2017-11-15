@@ -9,6 +9,13 @@ Only the users that are part of the group fuse, and the root user can run fuserm
 
 Possible causes are invalid account, key or container. In addition to this, if your account is https only, you may encounter this problem as blobfuse by default uses http. Run blobfuse with https using the option --use-https=true
 
+**3. fusermount: mount failed: Operation not permitted (CentOS)**
+
+fusermount is a priviliged operation on CentOS by default. You may work around this changing the permissions of the fusermount operation:
+
+    chown root /usr/bin/fusermount
+    chmod u+s /usr/bin/fusermount
+
 # Problems with build
 **1. CMake Error: your CXX compiler: "CMAKE_CXX_COMPILER-NOTFOUND" was not found.**
 
