@@ -5,6 +5,7 @@ blobfuse is currently available in the Microsoft product repository for Ubuntu d
 1. Configure the apt repository for Microsoft products following [this guideline](https://docs.microsoft.com/en-us/windows-server/administration/Linux-Package-Repository-for-Microsoft-Software)
 
 **E.g. Ubuntu 16.04**
+
     wget https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb
     sudo dpkg -i packages-microsoft-prod.deb
     sudo apt-get update
