@@ -23,6 +23,6 @@ Cmake is unable to find g++. Install it via:
 
 ```sudo apt-get update && sudo apt-get install build-essential```
 
-**2. cc1plus: error: unrecognized command line option "-std=c++11"
+**2. cc1plus: error: unrecognized command line option "-std=c++11"**
 
 Your compiler does not support C++ 11. Upgrade gcc to 4.7 or later.
