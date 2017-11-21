@@ -1,18 +1,28 @@
 # Install from Apt/Yum Package Repositories
 
-blobfuse is currently available in the Microsoft product repository for Ubuntu distros. 
+blobfuse is currently available in the Microsoft product repositories for Ubuntu, CentOS/RedHat distros. 
 
 **1.** Configure the apt repository for Microsoft products following [this guideline](https://docs.microsoft.com/en-us/windows-server/administration/Linux-Package-Repository-for-Microsoft-Software)
 
-**E.g. Ubuntu 16.04**
+**Ex.1 Ubuntu 16.04**
 
     wget https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb
     sudo dpkg -i packages-microsoft-prod.deb
     sudo apt-get update
 
+**Ex.2 Red Hat 7.3**
+
+     sudo rpm -Uvh https://packages.microsoft.com/config/rhel/7/packages-microsoft-prod.rpm
+
 **2.** Install blobfuse
 
+On Ubuntu:
+
     sudo apt-get install blobfuse
+
+On RedHat/CentOS
+
+    sudo yum install blobfuse
 
 You're set to go! Now follow the [Configuring and Running](https://github.com/Azure/azure-storage-fuse/wiki/Configuring-and-Running) wiki to configure a temp location, as well as your credentials.
 
