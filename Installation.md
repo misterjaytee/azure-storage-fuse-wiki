@@ -37,7 +37,7 @@ If you do not have git, install git via `sudo apt-get install git`
 ### CentOS instructions
 
     sudo yum -y install epel-release
-    sudo yum install git cmake3 fuse-devel libcurl-devel gcc gcc-c++ gnutls-devel fuse -y
+    sudo yum install git cmake3 fuse-devel libcurl-devel gcc gcc-c++ gnutls-devel libgcrypt-devel fuse -y
 
 ### RedHat instructions
 
