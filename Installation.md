@@ -41,7 +41,7 @@ If you do not have git, install git via `sudo apt-get install git`
 
 ### RedHat instructions
 
-    sudo yum install git cmake fuse-devel libcurl-devel gcc gcc-c++ gnutls-devel fuse -y
+    sudo yum install git cmake fuse-devel libcurl-devel gcc gcc-c++ gnutls-devel libgcrypt-devel fuse -y
 
 ### Ubuntu instructions
 
