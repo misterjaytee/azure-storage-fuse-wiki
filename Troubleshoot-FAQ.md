@@ -16,6 +16,13 @@ fusermount is a priviliged operation on CentOS by default. You may work around t
     chown root /usr/bin/fusermount
     chmod u+s /usr/bin/fusermount
 
+**4. Cannot access mounted directory**
+
+FUSE allows mounting filesystem in user space, and is only accessible by the user mounting it. For instance, if you have mounted using root, but you are trying to access it with another user, you will fail to do so. In order to workaround this, you can use the non-secure, fuse option '-o allow_other'.
+
+    sudo blobfuse /home/myuser/mount/ --config-file=connection.cfg --tmp-path=/mnt/resource/blobfusetmp -o allow_other
+
+
 # Problems with build
 **1. CMake Error: your CXX compiler: "CMAKE_CXX_COMPILER-NOTFOUND" was not found.**
 
