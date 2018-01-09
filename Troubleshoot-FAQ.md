@@ -22,6 +22,9 @@ FUSE allows mounting filesystem in user space, and is only accessible by the use
 
     sudo blobfuse /home/myuser/mount/ --config-file=connection.cfg --tmp-path=/mnt/resource/blobfusetmp -o allow_other
 
+**5. fuse: warning: library too old, some operations may not not work**
+
+Your system has an earlier version of FUSE module installed. blobfuse is tested and developed with FUSE 2.9.x. Please install FUSE 2.9.
 
 # Problems with build
 **1. CMake Error: your CXX compiler: "CMAKE_CXX_COMPILER-NOTFOUND" was not found.**
