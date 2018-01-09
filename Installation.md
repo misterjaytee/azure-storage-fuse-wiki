@@ -45,7 +45,7 @@ If you do not have git, install git via `sudo apt-get install git`
 
 ### Ubuntu instructions
 
-    sudo apt-get install pkg-config libfuse-dev cmake libcurl4-gnutls-dev libgnutls28-dev -y
+    sudo apt-get install pkg-config libfuse-dev cmake libcurl4-gnutls-dev libgnutls28-dev libgcrypt20-dev -y
 
 ## Building
 Run the build script located in the root folder of the repository. This will build the Azure Storage C++ Light library along with Blobfuse.
