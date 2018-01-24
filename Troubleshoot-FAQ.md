@@ -36,3 +36,26 @@ Cmake is unable to find g++. Install it via:
 **2. cc1plus: error: unrecognized command line option "-std=c++11"**
 
 Your compiler does not support C++ 11. Upgrade gcc to 4.7 or later.
+
+
+# Problems with mounting/unmounting
+**1. When mounting using the fstab method (e.g. mount -a), you get an error from mount:**
+```
+mount: wrong fs type, bad option, bad superblock on /scripts/mount.sh,
+       missing codepage or helper program, or other error
+
+       In some cases useful info is found in syslog - try
+       dmesg | tail or so.
+```
+
+Make sure the fuse package is installed (in addition to blobfuse), e.g. on Centos, Fedora, RHEL:
+
+``` yum install fuse ```
+
+
+**2. fusermount: command not found**
+
+You try to unmount the blob storage, but the recommended command is not found. Whilst `umount` may work instead, fusermount is the recommended methos, so install the fuse package, e.g.:
+
+``` yum install fuse ```
+

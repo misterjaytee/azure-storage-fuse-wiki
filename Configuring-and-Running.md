@@ -28,8 +28,9 @@ To run:
 `./mount.sh </path/to/desired/mountpoint>`
 
 ### Persisting
-1. Update connection.cfg file with your storage account information.
-2. Edit /etc/fstab with the blobfuse script. Add the following line:
+1. Make sure the fuse package is installed (e.g. yum install fuse)
+2. Update connection.cfg file with your storage account information.
+3. Edit /etc/fstab with the blobfuse script. Add the following line:
 
 `/<path_to_blobfuse>/mount.sh   </path/to/desired/mountpoint>     fuse    _netdev`
 
