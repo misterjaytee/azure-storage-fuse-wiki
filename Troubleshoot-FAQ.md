@@ -55,7 +55,7 @@ Make sure the fuse package is installed (in addition to blobfuse), e.g. on Cento
 
 **2. fusermount: command not found**
 
-You try to unmount the blob storage, but the recommended command is not found. Whilst `umount` may work instead, fusermount is the recommended methos, so install the fuse package, e.g.:
+You try to unmount the blob storage, but the recommended command is not found. Whilst `umount` may work instead, fusermount is the recommended method, so install the fuse package, e.g.:
 
 ``` yum install fuse ```
 
